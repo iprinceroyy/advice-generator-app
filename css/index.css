@@ -1,0 +1,66 @@
+/* ============
+    Colors 
+============ */
+/*  Primary  */
+/*  Neutral  */
+/* ==============
+    Typography  
+============== */
+/*  Body Copy  */
+/*  Font  */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap");
+/* Main */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.75rem;
+  background-color: #1f2632;
+}
+
+.advice__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #323a49;
+}
+
+.advice--id {
+  font-size: 1rem;
+  font-weight: 20;
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.advice--text {
+  color: #cee3e9;
+}
+
+.divider {
+  padding-block-end: 2rem;
+}
+
+.dice--btn {
+  position: absolute;
+  bottom: -2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #52ffa8;
+  padding: 1rem 1.1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
