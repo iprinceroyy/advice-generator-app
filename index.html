@@ -6,17 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=".assets/images/favicon-32x32.png">
 
+    <!--  CSS main file  -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--  JS main file  -->
+    <script defer src="js/script.js"></script>
 
     <title>Advice generator app</title>
 
 </head>
 
 <body>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main class="container">
+        <div class="advice advice__card">
+            <h2>advice <span class="advice--id"></span></h2>
+            <p class="advice--text"></p>
+
+            <img src="assets/images/pattern-divider-mobile.svg" alt="pattern divider">
+            <button class="dice--btn" type="button">
+              <img src="assets/images/icon-dice.svg" alt="dice image">
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </footer>
 </body>
 
 </html>
