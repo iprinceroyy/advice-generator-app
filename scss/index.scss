@@ -55,6 +55,10 @@ body {
     font-family: $font-family;
     font-size: 1.4rem;
     padding: 2rem;
+    line-height: 1.4;
+    @media(min-width: 45rem) and (max-width: 1279px) {
+        padding-inline: 17rem;
+    }
 }
 
 .loader {
@@ -87,11 +91,18 @@ body {
     gap: 1.5rem;
     padding-block: 2.5rem;
     padding-inline: 1.5rem;
-    border-radius: 20px;
-    transform: scale(0);
+    border-radius: 15px;
+    //transform: scale(0);
     transition: transform 2s ease-in;
     background-color: $dark-grayish-blue;
     z-index: 3;
+    box-shadow: -1rem 1rem 5rem -3rem;
+    @media(min-width: 1280px) {
+        font-size: 1.6rem;
+        padding-block: 3rem;
+        padding-inline: 2.45rem;
+        width: min(40%, 34.375rem);
+    }
 }
 
 .show {
@@ -111,18 +122,27 @@ body {
     text-align: center;
 }
 
-.divider {
-    padding-block-end: 2rem;
+.card__divider {
+    padding-block-end: 1.1rem;
 }
 
 .btn--dice {
     position: absolute;
-    left: 41%;
     bottom: -2rem;
     border-radius: 50%;
     border: none;
     background-color: $neon-green;
     padding: 1.125rem 1.2rem;
+    &:active {
+        cursor: pointer;
+        box-shadow: -0.2rem -0.2rem 2rem 0.3rem $neon-green;
+    }
+    @media(hover: hover) {
+        &:hover {
+            cursor: pointer;
+            box-shadow: -0.2rem -0.2rem 2rem 0.3rem $neon-green;
+        }
+    }
     img {
         transition: transform 0.5s ease;
     }
