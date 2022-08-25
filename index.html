@@ -20,15 +20,21 @@
 
 <body>
     <main class="container">
-        <div class="advice advice__card">
-            <h2 class="advice--id">advice <span class="id--num">#245</span></h2>
-            <p class="advice--text">Helloe there</p>
+        <h1 class="sr--only">Advice Generator App</h1>
+        <article class="advice advice__card">
+            <h2 class="advice--id">advice <span class="id--num"></span></h2>
+            <q class="advice--text"></q>
 
-            <img class="divider" src="assets/images/pattern-divider-mobile.svg" alt="pattern divider">
-            <button class="dice--btn" type="button">
-              <img src="assets/images/icon-dice.svg" alt="dice image">
+            <picture>
+                <source srcset="assets/images/pattern-divider-desktop.svg" media="(min-width:1024px)">
+                <img src="assets/images/pattern-divider-mobile.svg" alt="pattern divider">
+            </picture>
+            <button class="btn--dice" type="button">
+              <img class="dice" src="assets/images/icon-dice.svg" alt="dice image">
             </button>
-        </div>
+        </article>
+
+        <div class="loader"></div>
     </main>
 
     <footer>
