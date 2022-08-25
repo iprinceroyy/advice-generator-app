@@ -54,10 +54,11 @@ body {
     align-items: center;
     font-family: $font-family;
     font-size: 1.4rem;
-    padding: 2rem;
+    padding-inline: 2rem;
     line-height: 1.4;
+    // Only for iPad
     @media(min-width: 45rem) and (max-width: 1279px) {
-        padding-inline: 17rem;
+        padding-inline: 14rem;
     }
 }
 
