@@ -1,6 +1,5 @@
 'use strict';
 
-console.log('started.....');
 const cardContainer = document.querySelector('.advice__card');
 const adviceId = document.querySelector('.id--num');
 const adviceText = document.querySelector('.advice--text');
@@ -41,5 +40,3 @@ diceBtn.addEventListener('click', function() {
 window.addEventListener('keydown', e => {
     e.key === 'Enter' && animateAdvice();
 });
-
-getAdviceAndDisplay();
