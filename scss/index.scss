@@ -93,7 +93,7 @@ body {
     padding-block: 2.5rem;
     padding-inline: 1.5rem;
     border-radius: 15px;
-    //transform: scale(0);
+    transform: scale(0);
     transition: transform 2s ease-in;
     background-color: $dark-grayish-blue;
     z-index: 3;
@@ -121,7 +121,6 @@ body {
     color: $light-cyan;
     font-weight: $fw-800;
     text-align: center;
-    //transform: translateX(-110%);
 }
 
 .card__divider {
