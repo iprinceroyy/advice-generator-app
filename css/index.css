@@ -19,7 +19,6 @@
 body {
   font-family: "Manrope", sans-serif;
   background-color: #1f2632;
-  min-height: 100vh;
 }
 
 .sr--only {
@@ -27,11 +26,12 @@ body {
 }
 
 .container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: 1.4rem;
-  padding-block: 15rem;
   padding-inline: 2rem;
   line-height: 1.4;
 }
@@ -135,6 +135,7 @@ body {
   font-size: 1rem;
   color: #cee3e9;
   text-align: center;
+  padding-block-end: 2.5rem;
 }
 .footer__link a {
   color: #52ffa8;

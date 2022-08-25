@@ -41,7 +41,6 @@ $fw-800:800;
 body {
     font-family: $font-family;
     background-color: $dark-blue;
-    min-height: 100vh;
 }
 
 .sr--only {
@@ -49,12 +48,12 @@ body {
 }
 
 .container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //justify-content: center;
+    justify-content: center;
     font-size: 1.4rem;
-    padding-block: 15rem;
     padding-inline: 2rem;
     line-height: 1.4;
     // Only for iPad
@@ -158,6 +157,7 @@ body {
     font-size: 1rem;
     color: $light-cyan;
     text-align: center;
+    padding-block-end: 2.5rem;
     a {
         color: $neon-green;
         text-decoration: none;
