@@ -17,6 +17,7 @@
 }
 
 body {
+  font-family: "Manrope", sans-serif;
   background-color: #1f2632;
 }
 
@@ -30,7 +31,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Manrope", sans-serif;
   font-size: 1.4rem;
   padding-inline: 2rem;
   line-height: 1.4;
@@ -129,6 +129,16 @@ body {
 }
 .btn--dice .animate {
   transform: rotateY(180deg) rotateX(180deg) rotateZ(180deg);
+}
+
+.footer__link {
+  font-size: 1rem;
+  color: #cee3e9;
+  text-align: center;
+}
+.footer__link a {
+  color: #52ffa8;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */

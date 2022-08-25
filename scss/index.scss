@@ -39,6 +39,7 @@ $fw-800:800;
 }
 
 body {
+    font-family: $font-family;
     background-color: $dark-blue;
 }
 
@@ -52,7 +53,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $font-family;
     font-size: 1.4rem;
     padding-inline: 2rem;
     line-height: 1.4;
@@ -149,5 +149,15 @@ body {
     }
     .animate {
         transform: rotateY(180deg) rotateX(180deg) rotateZ(180deg);
+    }
+}
+
+.footer__link {
+    font-size: 1rem;
+    color: $light-cyan;
+    text-align: center;
+    a {
+        color: $neon-green;
+        text-decoration: none;
     }
 }
