@@ -16,52 +16,96 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1f2632;
+}
+
+.sr--only {
+  font-size: 0;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: "Manrope", sans-serif;
-  font-size: 1.75rem;
-  background-color: #1f2632;
+  font-size: 1.4rem;
+  padding: 2rem;
 }
 
+.loader {
+  position: absolute;
+  border: 12px dotted #1f2632;
+  border-radius: 50%;
+  animation: spin 2s ease-in-out infinite;
+  width: 89px;
+  height: 89px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: aqua;
+  }
+  50% {
+    border-left-color: aqua;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .advice__card {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 2rem;
+  padding-block: 2.5rem;
+  padding-inline: 1.5rem;
   border-radius: 20px;
+  transform: scale(0);
+  transition: transform 2s ease-in;
   background-color: #323a49;
+  z-index: 3;
+}
+
+.show {
+  transform: scale(1);
 }
 
 .advice--id {
-  font-size: 1rem;
-  font-weight: 20;
+  font-size: 0.7rem;
   color: #52ffa8;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 .advice--text {
   color: #cee3e9;
   font-weight: 800;
+  text-align: center;
 }
 
 .divider {
   padding-block-end: 2rem;
 }
 
-.dice--btn {
+.btn--dice {
   position: absolute;
+  left: 41%;
   bottom: -2rem;
   border-radius: 50%;
   border: none;
   background-color: #52ffa8;
-  padding: 1rem 1.1rem;
+  padding: 1.125rem 1.2rem;
+}
+.btn--dice img {
+  transition: transform 0.5s ease;
+}
+.btn--dice .animate {
+  transform: rotateY(180deg) rotateX(180deg) rotateZ(180deg);
 }
 
 /*# sourceMappingURL=index.css.map */
