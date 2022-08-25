@@ -31,6 +31,7 @@ window.addEventListener('load', () => {
 const animateAdvice = () => {
     getAdviceAndDisplay();
     diceBtn.children[0].classList.toggle('animate');
+    adviceText.classList.add('show--text');
 };
 
 diceBtn.addEventListener('click', function() {
@@ -40,3 +41,5 @@ diceBtn.addEventListener('click', function() {
 window.addEventListener('keydown', e => {
     e.key === 'Enter' && animateAdvice();
 });
+
+getAdviceAndDisplay();
