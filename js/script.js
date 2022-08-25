@@ -22,17 +22,24 @@ const getAdviceAndDisplay = async() => {
         throw err;
     }
 };
+
 window.addEventListener('load', () => {
     setTimeout(() => {
         cardContainer.classList.add('show');
         cardContainer.nextElementSibling.style.display = 'none';
     }, 2000);
 });
+const animateAdvice = () => {
+    getAdviceAndDisplay();
+    diceBtn.children[0].classList.toggle('animate');
+};
 
-diceBtn.addEventListener('click', getAdviceAndDisplay);
+diceBtn.addEventListener('click', function() {
+    animateAdvice();
+});
+
 window.addEventListener('keydown', e => {
-    console.log(e.key);
-    e.key === 'Enter' && getAdviceAndDisplay();
+    e.key === 'Enter' && animateAdvice();
 });
 
 getAdviceAndDisplay();
