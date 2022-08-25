@@ -86,12 +86,13 @@ body {
 
 .advice__card {
     position: relative;
+    font-size: clamp(1.4rem, 0.926rem + 1.05vw, 1.6rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding-block: 2.5rem;
-    padding-inline: 1.5rem;
+    padding-block: clamp(2.5rem, 1.315rem + 2.63vw, 3rem);
+    padding-inline: clamp(1.5rem, -0.75rem + 5vw, 2.45rem);
     border-radius: 15px;
     transform: scale(0);
     transition: transform 2s ease-in;
@@ -99,9 +100,6 @@ body {
     z-index: 3;
     box-shadow: -1rem 1rem 5rem -3rem;
     @media(min-width: 1280px) {
-        font-size: 1.6rem;
-        padding-block: 3rem;
-        padding-inline: 2.45rem;
         width: min(40%, 34.375rem);
     }
 }
