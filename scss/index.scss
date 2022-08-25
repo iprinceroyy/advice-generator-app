@@ -51,9 +51,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    //justify-content: center;
     font-size: 1.4rem;
+    padding-block: 14rem;
     padding-inline: 2rem;
     line-height: 1.4;
     // Only for iPad
@@ -121,6 +122,7 @@ body {
     color: $light-cyan;
     font-weight: $fw-800;
     text-align: center;
+    //transform: translateX(-110%);
 }
 
 .card__divider {
